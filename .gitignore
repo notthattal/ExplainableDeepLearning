@@ -1,5 +1,4 @@
 .DS_Store
 /venv
-/data
 /data_mnist
 /data_old
