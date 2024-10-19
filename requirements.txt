@@ -1,0 +1,9 @@
+kagglehub==0.3.3
+matplotlib==3.9.2
+numpy==1.26.4
+pandas==2.2.2
+protobuf==3.20.0
+tensorflow==2.17.0
+tensorflow_hub==0.16.1
+tcav==0.2.2
+utils==1.0.2
