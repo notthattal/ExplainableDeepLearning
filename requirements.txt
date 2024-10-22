@@ -1,9 +1,10 @@
-kagglehub==0.3.3
 matplotlib==3.9.2
 numpy==1.26.4
-pandas==2.2.2
-protobuf==3.20.0
-tensorflow==2.17.0
-tensorflow_hub==0.16.1
-tcav==0.2.2
-utils==1.0.2
+scipy==1.13.1
+scikit-learn==1.5.2
+torch==2.5.0
+torchvision==0.20.0
+torchcam==0.4.0
+tqdm==4.66.5
+ipywidgets==8.1.5
+jupyter==1.1.1
