@@ -1,10 +1,10 @@
-matplotlib==3.9.2
+matplotlib==3.7.1
 numpy==1.26.4
 scipy==1.13.1
 scikit-learn==1.5.2
-torch==2.5.0
+torch==2.4.1
 torchvision==0.20.0
 torchcam==0.4.0
 tqdm==4.66.5
-ipywidgets==8.1.5
+ipywidgets==7.7.1
 jupyter==1.1.1
