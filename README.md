@@ -4,9 +4,9 @@
 This repository consists of a notebook which uses Grad-CAM to evaluate the ResNet50 pretrained model for each layer of the model. The images used come from a small version of the ImageNet library. For a given label, this will output the Grad-CAM overlayed images for each image of that label (or labels) in the dataset.
 
 ### Hypothesis Being Tested
-$ H_0 $: Deeper layers of the ResNet50 model do not focus on more important and localized aspects of the image relating to the label being tested
+H0: Deeper layers of the ResNet50 model do not focus on more important and localized aspects of the image relating to the label being tested
 
-$ H_1 $: The deeper layers of the ResNet50 model focuses on features of images more relating to the label being tested as opposed to shallower layers
+H1: The deeper layers of the ResNet50 model focuses on features of images more relating to the label being tested as opposed to shallower layers
 
 ### Approach
 The approach used to test this hypothesis is to load in the TinyImageNet library and the pretrained ResNet50 model. We then assign a label to retrieve test images (in the case below we use the label 'wallaby' which contains 5 unique images of the animal), and for each layer of the model and for each of the images we run Grad-CAM and overlay the resulting Grad-CAM mask on top of the original image. Once complete, visual analysis of each image is performed to assess if Grad-CAM reports that deeper layers of the model focus on the important aspects of the image. For statistical analysis, we calculate the ratio of pixels in the heatmap produced by Grad-CAM that have a value > 0.85 and run the Kruskal-Wallis Test to calculate the p-value to determine if there's a statistical significance between the layers. The Kruskal-Wallis Test was chosen over Anova due to the ratio data violating the assumption of normality required by Anova.
